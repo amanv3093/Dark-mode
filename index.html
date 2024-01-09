@@ -50,6 +50,8 @@
 }
 h1{
     color: #222;
+    
+  
 }
     </style>
 </head>
@@ -120,11 +122,16 @@ h1{
             if(document.body.style.backgroundColor === "white"){
                 document.body.style.backgroundColor="black"
                 crl.style.left="57%";
-                txt.style.color="white"
+                txt.style.color="red"
+                // txt.style.background="linear-gradient(45deg, red, blue)"
+                // txt.style.boxShadow="1px 1px  red";
+                txt.style.filter = "drop-shadow(1px 1px 8px rgb(98, 81, 103))";
             }else{
                 document.body.style.backgroundColor="white"
                 crl.style.left="2%";
                 txt.style.color="black"
+                txt.style.filter = "drop-shadow(0px 0px 0px rgb(230, 96, 96))";
+                
             }
            
 
